@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane fx:id="mpanal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0088ff; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Sports.Controller">
+   <children>
+      <TableView fx:id="tableforprint" layoutX="202.0" layoutY="75.0" onMouseClicked="#dubleclickrowpass" prefHeight="355.0" prefWidth="388.0">
+        <columns>
+          <TableColumn fx:id="printpchest" prefWidth="69.0" text="Chest no" />
+          <TableColumn fx:id="printpname" prefWidth="83.0" text="Name" />
+            <TableColumn fx:id="printpdep" prefWidth="76.0" text="Department" />
+            <TableColumn fx:id="printpevent" prefWidth="72.0" text="Event" />
+            <TableColumn fx:id="printprank" prefWidth="86.0" text="Rank" />
+        </columns>
+      </TableView>
+      <Button fx:id="printBU" layoutX="489.0" layoutY="505.0" mnemonicParsing="false" onAction="#printit" prefHeight="62.0" prefWidth="174.0" text="Print">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="refresher3" fitHeight="37.0" fitWidth="54.0" layoutX="210.0" layoutY="26.0" onMouseClicked="#refreshaction3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/refresh.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableforprint1" layoutX="598.0" layoutY="75.0" onKeyPressed="#deletekeypress" prefHeight="355.0" prefWidth="388.0">
+         <columns>
+            <TableColumn fx:id="printpchest1" prefWidth="69.0" text="Chest no" />
+            <TableColumn fx:id="printpname1" prefWidth="83.0" text="Name" />
+            <TableColumn fx:id="printpdep1" prefWidth="76.0" text="Department" />
+            <TableColumn fx:id="printpevent1" prefWidth="72.0" text="Event" />
+            <TableColumn fx:id="printprank1" prefWidth="86.0" text="Rank" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="passtable" fitHeight="37.0" fitWidth="73.0" layoutX="561.0" layoutY="26.0" onMousePressed="#actionforpassingtable" onMouseReleased="#actionforpassingtable2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icons8_left_arrow_48px%20-%20Copy.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tabledeleter" fitHeight="37.0" fitWidth="54.0" layoutX="636.0" layoutY="26.0" onMousePressed="#emptythetable" onMouseReleased="#emptythetable2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/delete.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

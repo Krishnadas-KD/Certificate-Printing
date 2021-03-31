@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="649.0" style="-fx-background-color: #990055; -fx-background-radius: 30; -fx-border-color: #222222; -fx-border-radius: 27; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="297.0" layoutY="-1.0" prefHeight="375.0" prefWidth="352.0" style="-fx-background-color: #222222; -fx-background-radius: 30; -fx-border-color: #990055; -fx-border-radius: 27; -fx-border-width: 3; -fx-text-inner-color: White">
+         <children>
+            <TextField fx:id="userfeild" layoutX="121.0" layoutY="90.0" onInputMethodTextChanged="#checkuser" onMouseMoved="#checkuser" prefHeight="32.0" prefWidth="156.0" promptText="Usename" style="-fx-background-color: #222222; -fx-border-color: #ff0000; -fx-border-width: 2; -fx-border-radius: 30; ">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button fx:id="LogineB" layoutX="115.0" layoutY="272.0" mnemonicParsing="false" onAction="#loginescuss" onMouseEntered="#logmouseenter" onMouseExited="#logmouseexit" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #222222; -fx-background-radius: 30; -fx-border-color: #ff0000; -fx-border-width: 2; -fx-border-radius: 30;" text="        Login" />
+            <ImageView fx:id="useric" fitHeight="32.0" fitWidth="35.0" layoutX="83.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CloseB2" fitHeight="29.0" fitWidth="22.0" layoutX="304.0" layoutY="14.0" onMouseClicked="#closeclick" onMouseEntered="#closeenter" onMouseExited="#closeexit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/press.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="passic" fitHeight="32.0" fitWidth="35.0" layoutX="83.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="closeB1" fitHeight="22.0" fitWidth="50.0" layoutX="304.0" layoutY="14.0" onMouseClicked="#closeclick" onMouseEntered="#closeenter" onMouseExited="#closeexit" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/close.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="passfeild" layoutX="121.0" layoutY="148.0" onMouseExited="#checkpass" prefHeight="32.0" prefWidth="156.0" promptText="Password" style="-fx-background-color: #222222; -fx-background-radius: 30; -fx-border-color: #ff0000; -fx-border-radius: 30; -fx-border-width: 2; -fx-text-inner-color: white">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <ImageView fx:id="loginesic" fitHeight="32.0" fitWidth="33.0" layoutX="131.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/locked.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="warning" layoutX="101.0" layoutY="323.0" text="*Check your password and Username" textFill="RED" visible="false" />
+         </children>
+      </Pane>
+      <Label layoutX="69.0" layoutY="105.0" prefHeight="53.0" prefWidth="231.0" text="ARTS &amp; SPORT" textFill="#1500ff">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="47.0" prefHeight="85.0" prefWidth="129.0" text="COLLEGE" textFill="#2200ff">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="161.0" prefHeight="53.0" prefWidth="231.0" text="MANAGEMENT " textFill="#4400ff">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

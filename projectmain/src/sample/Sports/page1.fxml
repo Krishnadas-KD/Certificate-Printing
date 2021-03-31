@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #cc5500; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Sports.Controller">
+   <children>
+      <TextField fx:id="reg" layoutX="523.0" layoutY="142.0" onMouseClicked="#disaplingmassage" prefHeight="33.0" prefWidth="269.0" />
+      <TextField fx:id="name" layoutX="523.0" layoutY="205.0" onMouseClicked="#disaplingmassage" prefHeight="33.0" prefWidth="269.0" />
+      <TextField fx:id="depaet" layoutX="523.0" layoutY="273.0" onMouseClicked="#disaplingmassage" prefHeight="33.0" prefWidth="269.0" />
+      <ComboBox fx:id="cbevrnt1" layoutX="343.0" layoutY="375.0" onMouseClicked="#coboboxmouse" prefHeight="25.0" prefWidth="172.0" promptText="null" />
+      <ComboBox fx:id="cbevrnt2" layoutX="572.0" layoutY="375.0" onMouseClicked="#coboboxmouse" prefHeight="25.0" prefWidth="172.0" promptText="null" />
+      <ComboBox fx:id="cbevrnt3" layoutX="792.0" layoutY="375.0" onMouseClicked="#coboboxmouse" prefHeight="25.0" prefWidth="172.0" promptText="null" />
+      <Label layoutX="343.0" layoutY="142.0" prefHeight="33.0" prefWidth="109.0" text="Reg No:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="205.0" prefHeight="33.0" prefWidth="109.0" text="Name :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="268.0" prefHeight="43.0" prefWidth="117.0" text="Department :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="565.0" layoutY="317.0" prefHeight="49.0" prefWidth="142.0" text="Choose Events">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Badderstud" layoutX="544.0" layoutY="489.0" mnemonicParsing="false" onAction="#adder1" prefHeight="33.0" prefWidth="200.0" text="INSERT">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Pane layoutX="207.0" layoutY="45.0" prefHeight="38.0" prefWidth="786.0" style="-fx-background-color: #222; -fx-background-radius: 5;">
+         <children>
+            <Button fx:id="studviewd" layoutX="393.0" layoutY="3.0" mnemonicParsing="false" onAction="#nextp2" prefHeight="25.0" prefWidth="390.0" style="-fx-background-color: #222; -fx-background-radius: 20; -fx-border-radius: 30; -fx-border-color: #0000ff; -fx-border-width: 2.5;" text="View Details" />
+            <Button fx:id="studentryd" layoutY="3.0" mnemonicParsing="false" onAction="#nextp1" prefHeight="25.0" prefWidth="390.0" style="-fx-background-color: #6666ff; -fx-background-radius: 20; -fx-border-radius: 30; -fx-border-color: #0000ff; -fx-border-width: 2.5;" text="Entry Details" />
+         </children>
+      </Pane>
+      <Label fx:id="addingscusss" layoutX="544.0" layoutY="427.0" prefHeight="25.0" prefWidth="401.0" text="*Scussfully add" textFill="LIME" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="addingfalied" layoutX="544.0" layoutY="427.0" prefHeight="25.0" prefWidth="401.0" text="*Adding Falied" textFill="RED" visible="false">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="bforclear" layoutX="813.0" layoutY="486.0" mnemonicParsing="false" onAction="#clearingaction" prefHeight="38.0" prefWidth="94.0" text="Clear feild" />
+      <StackPane fx:id="stackc2" prefHeight="150.0" prefWidth="200.0" />
+   </children>
+</Pane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<Pane fx:id="artpaen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #222222; -fx-background-radius: 30; -fx-border-width: 2; -fx-border-radius: 30; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Sports.Controller">
+   <children>
+      <StackPane fx:id="stackc" prefHeight="600.0" prefWidth="200.0" />
+      <ImageView fx:id="closegreen" fitHeight="31.0" fitWidth="34.0" layoutX="934.0" layoutY="14.0" onMouseClicked="#closeprogram" onMouseEntered="#closeentry" onMouseExited="#closeecite" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/press.png" />
+         </image>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <ColorAdjust brightness="1.0" />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="closered" fitHeight="31.0" fitWidth="34.0" layoutX="934.0" layoutY="14.0" onMouseClicked="#closeprogram" onMouseEntered="#closeentry" onMouseExited="#closeecite" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../img/close.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="1.5" layoutY="2.0" prefHeight="596.0" prefWidth="200.0" style="-fx-background-color: #555555; -fx-background-radius: 25; -fx-background-radius: 25;">
+         <children>
+            <Button fx:id="studententry" layoutY="100.0" mnemonicParsing="false" onAction="#gostudententry" prefHeight="72.0" prefWidth="200.0" style="-fx-background-color: #cc5500;" text="Student Entry" textFill="WHITE">
+               <effect>
+                  <DropShadow radius="4.75" width="0.0" />
+               </effect>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="winnerentry" layoutY="255.0" mnemonicParsing="false" onAction="#gowinnerentry" prefHeight="72.0" prefWidth="200.0" style="-fx-background-color: #008802;" text="Winners Entry">
+               <effect>
+                  <DropShadow radius="4.75" width="0.0" />
+               </effect>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="printerB" layoutY="415.0" mnemonicParsing="false" onAction="#gotoprinter" prefHeight="72.0" prefWidth="200.0" style="-fx-background-color: #0088ff;" text="Print">
+               <effect>
+                  <DropShadow radius="4.75" width="0.0" />
+               </effect>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="d2" layoutX="326.0" layoutY="272.0" text="Choose the option and Continu the process">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#3b3bda" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="d1" layoutX="539.0" layoutY="102.0" text="Welcome">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</Pane>

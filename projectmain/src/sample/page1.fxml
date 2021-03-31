@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane fx:id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="647.5" style="-fx-background-color: #555555; -fx-background-radius: 30; -fx-border-color: #990055; -fx-border-width: 3; -fx-border-radius: 27;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="image1" fitHeight="297.0" fitWidth="555.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/download.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Bu1" fitHeight="70.0" fitWidth="52.0" layoutX="578.0" layoutY="162.0" onMouseClicked="#chnage1" onMouseEntered="#imcolorchange1" onMouseExited="#imcolorchange15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8_left_arrow_48px%20-%20Copy.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="GOpage1" layoutX="248.0" layoutY="335.0" mnemonicParsing="false" onAction="#gotoArts" prefHeight="33.0" prefWidth="214.0" style="-fx-background-radius: 30;" text="GO">
+         <effect>
+            <DropShadow color="RED">
+               <input>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.74" color="RED" height="26.93" radius="13.705" width="29.89">
+                     <input>
+                        <ColorAdjust brightness="-0.02" />
+                     </input>
+                  </InnerShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="Aaddevent" layoutX="574.0" layoutY="52.0" mnemonicParsing="false" onAction="#addEvent1" prefHeight="33.0" prefWidth="61.0" text="Event +" />
+      <ImageView fx:id="CloseB2" fitHeight="29.0" fitWidth="22.0" layoutX="604.0" layoutY="14.0" onMouseClicked="#closeclick" onMouseEntered="#closeenter" onMouseExited="#closeexit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/press.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeB1" fitHeight="22.0" fitWidth="50.0" layoutX="604.0" layoutY="14.0" onMouseClicked="#closeclick" onMouseEntered="#closeenter" onMouseExited="#closeexit" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/close.png" />
+         </image>
+      </ImageView>
+      <StackPane fx:id="stack1" prefHeight="375.0" prefWidth="0.0" />
+   </children>
+</Pane>

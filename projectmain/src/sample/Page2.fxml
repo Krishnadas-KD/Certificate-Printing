@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="647.5" style="-fx-background-color: #555555; -fx-background-radius: 30; -fx-border-color: #990055; -fx-border-width: 3; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="image2" fitHeight="316.0" fitWidth="530.0" layoutX="86.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Sports.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Bu2" fitHeight="70.0" fitWidth="52.0" layoutX="13.0" layoutY="162.0" onMouseClicked="#change2" onMouseEntered="#imcolorchange2" onMouseExited="#imcolorchange25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8_left_arrow_48px.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.04" contrast="-0.02" hue="0.05" saturation="0.07" />
+         </effect>
+      </ImageView>
+      <Button fx:id="GOpage2" layoutX="248.0" layoutY="335.0" mnemonicParsing="false" onAction="#gotoSports" prefHeight="33.0" prefWidth="214.0" style="-fx-background-radius: 30;" text="GO">
+         <effect>
+            <DropShadow color="RED">
+               <input>
+                  <InnerShadow choke="0.71" color="RED" height="23.96" radius="16.6075" width="44.47">
+                     <input>
+                        <ColorAdjust brightness="0.03" contrast="-0.02" hue="-0.02" saturation="-0.05" />
+                     </input>
+                  </InnerShadow>
+               </input>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="Seventadd" layoutX="9.0" layoutY="35.0" mnemonicParsing="false" onAction="#addevent2" prefHeight="33.0" prefWidth="61.0" text="Event +" />
+      <ImageView fx:id="CloseB2" fitHeight="29.0" fitWidth="22.0" layoutX="612.0" layoutY="14.0" onMouseClicked="#closeclick" onMouseEntered="#closeenter" onMouseExited="#closeexit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/press.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeB1" fitHeight="22.0" fitWidth="50.0" layoutX="612.0" layoutY="14.0" onMouseClicked="#closeclick" onMouseEntered="#closeenter" onMouseExited="#closeexit" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/close.png" />
+         </image>
+      </ImageView>
+      <StackPane fx:id="stack2" prefHeight="375.0" prefWidth="9.0" />
+   </children>
+</Pane>

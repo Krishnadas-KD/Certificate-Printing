@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="tablewin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #cc5500; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Arts.Controller">
+   <children>
+      <Pane layoutX="207.0" layoutY="45.0" prefHeight="38.0" prefWidth="786.0" style="-fx-background-color: #222; -fx-background-radius: 5;">
+         <children>
+            <Button fx:id="studviewd" layoutX="393.0" layoutY="3.0" mnemonicParsing="false" onAction="#nextp2" prefHeight="25.0" prefWidth="390.0" style="-fx-background-color: #6666ff; -fx-background-radius: 20; -fx-border-radius: 30; -fx-border-color: #0000ff; -fx-border-width: 2.5;" text="View Details" />
+            <Button fx:id="studentryd" layoutY="3.0" mnemonicParsing="false" onAction="#nextp1" prefHeight="25.0" prefWidth="390.0" style="-fx-background-color: #222; -fx-background-radius: 20; -fx-border-radius: 30; -fx-border-color: #0000ff; -fx-border-width: 2.5;" text="Entry Details" />
+         </children>
+      </Pane>
+      <TableView fx:id="Tablestud" layoutX="224.0" layoutY="134.0" onMouseClicked="#tabmclick" prefHeight="450.0" prefWidth="616.0">
+        <columns>
+          <TableColumn fx:id="col_che" prefWidth="77.0" text="Chest No" />
+          <TableColumn fx:id="col_ren" prefWidth="83.0" text="Reg No" />
+            <TableColumn fx:id="col_name" prefWidth="79.0" text="Name" />
+            <TableColumn fx:id="col_dep" prefWidth="101.0" text="Department" />
+            <TableColumn fx:id="col_ev1" prefWidth="83.0" text="Event 1" />
+            <TableColumn fx:id="col_ev2" prefWidth="81.0" text="Event 2" />
+            <TableColumn fx:id="col_ev3" prefWidth="111.0" text="Event 3" />
+        </columns>
+      </TableView>
+      <Button fx:id="printbb" layoutX="875.0" layoutY="516.0" mnemonicParsing="false" onAction="#actionit" prefHeight="60.0" prefWidth="82.0" style="-fx-background-radius: 10;" text="Print List">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searcherfeld" layoutX="384.0" layoutY="96.0" onKeyTyped="#wordcome" prefHeight="25.0" prefWidth="411.0" />
+      <Button fx:id="refesher" layoutX="805.0" layoutY="91.0" mnemonicParsing="false" onAction="#refrsher" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: #cc5500;">
+         <graphic>
+            <ImageView fx:id="refresher" fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" rotate="-102.5">
+               <image>
+                  <Image url="@../../img/refresh.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="31.0" fitWidth="44.0" layoutX="224.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/search.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="bysearch" layoutX="261.0" layoutY="96.0" onMouseClicked="#showlist" prefHeight="25.0" prefWidth="114.0" promptText="Name" />
+      <TextField fx:id="regno" alignment="TOP_LEFT" layoutX="849.0" layoutY="134.0" prefHeight="25.0" prefWidth="134.0" promptText="Regno" style="-fx-background-color: #cc5500; -fx-border-width: 2; -fx-border-color: #000;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nme" alignment="TOP_LEFT" layoutX="849.0" layoutY="179.0" prefHeight="25.0" prefWidth="134.0" promptText="Name" style="-fx-background-color: #cc5500; -fx-border-width: 2; -fx-border-color: #000;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="depar" alignment="TOP_LEFT" layoutX="849.0" layoutY="230.0" prefHeight="25.0" prefWidth="134.0" promptText="Department" style="-fx-background-color: #cc5500; -fx-border-width: 2; -fx-border-color: #000;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="bediter1" layoutX="849.0" layoutY="417.0" mnemonicParsing="false" onAction="#onediter" prefHeight="25.0" prefWidth="58.0" text="Edit" />
+      <ComboBox fx:id="ev1" layoutX="849.0" layoutY="275.0" onMouseClicked="#comboboxmouseclick2" prefHeight="25.0" prefWidth="134.0" />
+      <ComboBox fx:id="ev2" layoutX="849.0" layoutY="321.0" onMouseClicked="#comboboxmouseclick2" prefHeight="25.0" prefWidth="134.0" />
+      <ComboBox fx:id="ev3" layoutX="849.0" layoutY="365.0" onMouseClicked="#comboboxmouseclick2" prefHeight="25.0" prefWidth="134.0" />
+      <Button fx:id="deleter1" layoutX="918.0" layoutY="417.0" mnemonicParsing="false" onAction="#ondelecte1" prefHeight="25.0" prefWidth="58.0" text="Delete" />
+      <StackPane fx:id="stackc2" prefHeight="150.0" prefWidth="200.0" />
+   </children>
+</Pane>

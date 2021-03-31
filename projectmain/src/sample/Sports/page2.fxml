@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #008802; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Sports.Controller">
+   <children>
+      <Label layoutX="392.0" layoutY="147.0" text="Choose Event :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="win1st" layoutX="558.0" layoutY="257.0" />
+      <ComboBox fx:id="winevent" layoutX="565.0" layoutY="150.0" onMouseClicked="#wineventclick" prefHeight="25.0" prefWidth="190.0" />
+      <Button fx:id="Baddwinner" layoutX="533.0" layoutY="483.0" mnemonicParsing="false" onAction="#foraddwinner" prefHeight="43.0" prefWidth="179.0" text="Enter">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="441.0" layoutY="201.0" prefHeight="44.0" prefWidth="317.0" text="Enter Chest Number">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="254.0" text="1st">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="win2st" layoutX="558.0" layoutY="321.0" />
+      <Label layoutX="508.0" layoutY="318.0" text="2nd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="win3st" layoutX="558.0" layoutY="382.0" />
+      <Label layoutX="508.0" layoutY="379.0" text="3rd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="207.0" layoutY="45.0" prefHeight="38.0" prefWidth="786.0" style="-fx-background-color: #222; -fx-background-radius: 5;">
+         <children>
+            <Button fx:id="winnviewd" layoutX="393.0" layoutY="3.0" mnemonicParsing="false" onAction="#next4" prefHeight="25.0" prefWidth="390.0" style="-fx-background-color: #222; -fx-background-radius: 20; -fx-border-radius: 30; -fx-border-color: #0000ff; -fx-border-width: 2.5;" text="View Details" />
+            <Button fx:id="winentryd" layoutY="3.0" mnemonicParsing="false" onAction="#next3" prefHeight="25.0" prefWidth="390.0" style="-fx-background-color: #6666ff; -fx-background-radius: 20; -fx-border-radius: 30; -fx-border-color: #0000ff; -fx-border-width: 2.5;" text="Entry Details" />
+         </children>
+      </Pane>
+      <StackPane fx:id="stackc3" prefHeight="150.0" prefWidth="200.0" />
+   </children>
+</Pane>
